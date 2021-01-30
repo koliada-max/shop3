@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Новогодний список</h1>
+        <img src="images/111.jpg" alt="Корзина" width="300">
+    <div>
+        <form action="111" method="POST">
+        <!--путь к серверному файлу--> 
+            <fieldset>
+                <legend>Продукты</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Яйца"> Яйца
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Рыба"> Рыба
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Мясо"> Мясо
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Картошка"> Картошка
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Буряк"> Буряк
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Кукуруза"> Кукуруза
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="products" value="Лимон"> Лимон
+                            </label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Напитки:</legend>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox">Сок</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">Вода</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">Шампанское</label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Дата и время:</legend>
+                    <ul>
+                        <li>
+                            <label for="day">Дата доставки: </label>
+                                <input type="date" name="date" id="day" value="2020-12-31">
+                        </li>
+                        <li>
+                            <label for="time">Время: </label><br>
+                                <input type="time" id="time">
+                        </li>
+                    </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Инициализация:</legend>
+                    <label for="email">Электронная почта:</label>
+                        <input type="email" name="email" id="email" placeholder="111@gmail.com" autocomplete="email"> <br>
+    
+                    <label for="login">Имя пользователя:</label>
+                        <input type="text" name="login" id="login" autocomplete="username"> <br>
+
+                    <label for="password">Пароль:</label>
+                        <input type="password" name="password" id="password">
+            </fieldset>
+            <fieldset>
+                <legend>Способы доставки:</legend>
+                    <input type="radio" name="shipp" id="kurier" value="курьер">
+                        <label for="kurier">Курьер</label><br>
+                    <input type="radio" name="shipp" id="samovyvoz" value="Самовывоз" checked>
+                        <label for="samovyvoz">Самовывоз.</label>
+             </fieldset>
+        </form>
+    </div>
+</body>
+</html>
